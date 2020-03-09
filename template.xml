@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://www.w3.org" version="0.74" name="eform">
+  <style id="eform" name="eform" image_directory="images" css_file="eform" sound_directory="sound" font_directory="fonts"/>
+  <substyle id="acces_libre" name="acces_libre" image_directory="images" css_file="acces_libre" sound_directory="sound" font_directory="fonts"/>
+  <substyle id="outils_services" name="outils_services" image_directory="images" css_file="outils_services" sound_directory="sound" font_directory="fonts"/>
+  <substyle id="formation_ecole" name="formation_ecole" image_directory="images" css_file="formation_ecole" sound_directory="sound" font_directory="fonts"/>
+</template>

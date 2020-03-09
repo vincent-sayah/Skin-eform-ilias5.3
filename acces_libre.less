@@ -1,0 +1,251 @@
+@import "../../../../templates/default/delos";
+// Import Custom Less Files here
+@import "acces_libre-variables.less";
+
+
+/* Container sur 100% ecran au lieu de 1014px */
+.ilContainerWidth {
+    max-width: 100%;
+	}
+
+	/*    TYPOGRAPHIE   */
+@font-face {
+  font-family: 'Raleway Light';
+  src: url('fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway SemiBold';
+  src: url('fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway Thin';
+  src: url('fonts/Raleway-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway ExtraBold';
+  src: url('fonts/Raleway-ExtraBold.ttf');
+}
+
+	
+/***** MENU & bandeau haut  ******/
+
+.ilMainHeader {
+    background-color: #FFF;
+    height: 60px; /*remonter bandeau blanc menu*/
+    border-bottom: 3px solid #F0F0F0;
+}
+
+.ilTopTitle {
+	font-family: 'Raleway ExtraBold';
+	padding: 0 0 0 135px;
+}
+
+#ilTopNav.navbar > .navbar-collapse {
+    margin: -10px;
+}
+
+#ilTopNav.navbar{
+	font-family: 'Raleway SemiBold';
+}
+
+#ilTopBarNav > li > a {
+	font-family: 'Raleway SemiBold';
+    color: white;
+}
+
+/********SUPRESSION BANNIERE***************/
+.banniere_eform {
+	display:none;
+}
+
+/***** ONGLET ET SOUS ONGLET  ******/
+
+#ilTab {
+    border-style: none none none;
+	font-size: 12px;
+}
+
+.onglet {
+	text-transform: uppercase;
+	font-family: 'Raleway SemiBold';
+	border-right: 4px solid gray;
+	margin-bottom: 10px;
+}
+
+.onglet > a {
+	color: #333;
+}
+
+.onglet:hover{
+	border-right: 4px solid #8cc63f;
+	margin-bottom: 10px;
+	color: #8cc63f
+}
+
+.onglet > a:hover{
+	color: #8cc63f
+}
+
+.active {
+	border-right: 4px solid #8cc63f;
+	margin-bottom: 10px;
+	color: #8cc63f
+}
+
+.active > a {
+	color: #8cc63f
+}
+
+#ilSubTab {
+	font-family: 'Raleway SemiBold';
+	color: white;
+	padding: 10px;
+	margin: 20px;
+	background: #8cc63f;
+}
+
+#ilSubTab > li > a {
+    color: white;
+}
+
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+    color: #333;
+}
+.action{
+font-family: 'Raleway SemiBold';
+}
+.glyphicon-cog{
+font-size: 18px;
+}
+
+/******** LIST ITEM CONTENU *****************/	
+
+h4.il_ContainerItemTitle {
+    font-weight: bold;
+    font-size: 120%;
+	text-transform:uppercase;
+}
+a.il_ContainerItemTitle {
+	color: #333;
+
+}
+
+/**************BOUTON*****************/
+
+.btn-default {
+    color: #FFF;
+    background-color: #333;
+    border-color: ##333;
+}
+
+.btn-default:active,.btn-default:active:hover,.btn-default:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default.focus:active, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    color: #557196;
+    background-color: #E5E5E5;
+    border-color: #B1B1B1;
+}
+
+
+
+/*.sous_onglet {
+	font-family: 'Raleway SemiBold';
+	background: #8cc63f;
+}*/
+
+
+/*suppression onglet info contenu etc ... */
+  /*#ilTab { 
+
+  display: none; 
+}*/
+
+/******** TITRE CATEGORIE ***************/
+
+a#il_mhead_t_focus {
+	font-family: 'Raleway Regular';
+	text-transform: uppercase;
+	background: #8cc63f;
+	color: white;
+
+}
+
+hr {
+ border: 1px solid #8cc63f;
+}
+
+/******** fil d'ariane ***************/
+
+#mainscrolldiv > ol > li > a {
+	font-family: 'Raleway SemiBold';
+    color: #8cc63f;
+}
+.breadcrumb {
+    margin: -1.5em 0 20px 0;
+}
+
+.breadcrumb > li + li:before {
+    content: ">>";
+    padding: 0px 5px;
+    color: #8cc63f;
+}
+
+/********DEVELOPPER UNE COMPETENCE ****************/	
+
+/******** Bordure tiles (Dev competences)  *******/
+
+.flex-col:hover {
+   border-style: solid;
+    border-color: #8cc63f;
+    border-width: 2px;
+} 
+
+
+/********PREPARER LE NFS ****************/
+/******************ajout pour NFS *******/
+
+.icone_info{	
+width: 30px;
+}
+
+.faq_nfs{
+background-color:#8cc63f;	
+}
+
+
+.faq_nfs > h1{
+color:white;
+font-family: 'Raleway SemiBold';
+}
+
+.glyphicon-question-sign, .glyphicon-print{	
+color:white;
+}
+
+.faq{	
+font-family: 'Raleway SemiBold';
+color:white;
+}
+.glyphicon-question-sign{
+font-size: 40px;
+}
+
+.titre_faq {
+font-family: 'Raleway SemiBold';
+font-size: 30px;
+color:white;	
+}
+
+.fleche{
+width: 30px;
+float:right;
+}
+
+
+

@@ -1,0 +1,265 @@
+@import "../../../../templates/default/delos";
+// Import Custom Less Files here
+@import "eform-variables.less";
+
+
+/* Container sur 100% ecran au lieu de 1014px */
+.ilContainerWidth {
+    max-width: 100%;
+	}
+
+	/*    TYPOGRAPHIE   */
+@font-face {
+  font-family: 'Raleway Light';
+  src: url('fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway SemiBold';
+  src: url('fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway Thin';
+  src: url('fonts/Raleway-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway ExtraBold';
+  src: url('fonts/Raleway-ExtraBold.ttf');
+}
+
+	
+/***** MENU & bandeau haut  ******/
+
+.ilMainHeader {
+    background-color: #FFF;
+    height: 60px; /*remonter bandeau blanc menu*/
+    border-bottom: 3px solid #F0F0F0;
+}
+
+.ilTopTitle {
+	font-family: 'Raleway ExtraBold';
+	padding: 0 0 0 135px;
+}
+
+#ilTopNav.navbar > .navbar-collapse {
+    margin: -10px;
+}
+
+#ilTopNav.navbar{
+	font-family: 'Raleway SemiBold';
+}
+
+#ilTopBarNav > li > a {
+	font-family: 'Raleway SemiBold';
+    color: white;
+}
+
+
+/***** ONGLET ET SOUS ONGLET  ******/
+
+#ilTab {
+    border-style: none none none;
+	font-size: 12px;
+}
+
+.onglet {
+	text-transform: uppercase;
+	font-family: 'Raleway SemiBold';
+	border-right: 4px solid gray;
+	margin-bottom: 10px;
+}
+
+.onglet > a {
+	color: #333;
+}
+
+.onglet:hover{
+	border-right: 4px solid #3ec8ce;
+	margin-bottom: 10px;
+	color: #3ec8ce
+}
+
+.onglet > a:hover{
+	color: #3ec8ce
+}
+
+.active {
+	border-right: 4px solid #3ec8ce;
+	margin-bottom: 10px;
+	color: #3ec8ce
+}
+
+.active > a {
+	color: #3ec8ce
+}
+
+#ilSubTab {
+	font-family: 'Raleway SemiBold';
+	color: white;
+	padding: 10px;
+	margin: 20px;
+	background: #3ec8ce;
+}
+
+#ilSubTab > li > a {
+    color: white;
+}
+
+#ilSubTab > li.active > a, #ilSubTab > li.active > a:hover, #ilSubTab > li.active > a:focus {
+    color: #333;
+}
+.action{
+font-family: 'Raleway SemiBold';
+}
+.glyphicon-cog{
+font-size: 18px;
+}
+
+/* PAGE DE DECONNEXION*/
+.ilStartupFrame {
+    margin: 50px 50px 50px 120px;
+}
+
+/*** PAGE ACCUEIL ******/
+/***********************/
+
+.bg_header{
+ background-color:#3ec8ce;
+}
+
+.mg_header{
+ margin-top: 100px;
+}
+
+.breadcrumb {
+ visibility: hidden;
+}
+
+.ilFixedTopSpacer {
+ padding-top: 0px; 
+}
+
+.ilTreeView, .ilLeftNav{
+    display: none;
+}
+
+#ilContentContainer {
+    margin-left: 0px;
+}
+
+/* MENU LIBRE ACCES - OUTILS ET SERVICE */
+/* style eform*/
+
+
+hr{
+  border: 1px solid #56565b;
+}
+
+.libre_acces {
+font-family: 'Raleway SemiBold';
+background: #8cc63f;
+color:white;
+text-align: center;
+}
+
+.outils_services {
+font-family: 'Raleway SemiBold';	
+background: #9e005d;
+color:white;
+text-align: center;
+}
+
+.bloc {
+font-family: 'Raleway SemiBold';
+margin-top:50px
+}
+
+.fleche{
+width: 30px;
+float: right;	
+}
+
+h2 {
+	
+color:#8cc63f;
+}
+
+
+
+/******** LIST ITEM CONTENU *****************/	
+
+h4.il_ContainerItemTitle {
+    font-weight: bold;
+    font-size: 120%;
+	text-transform:uppercase;
+}
+a.il_ContainerItemTitle {
+	color: #333;
+
+}
+
+/**************BOUTON*****************/
+
+.btn-default {
+    color: #FFF;
+    background-color: #333;
+    border-color: ##333;
+}
+
+.btn-default:active,.btn-default:active:hover,.btn-default:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default.focus:active, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    color: #557196;
+    background-color: #E5E5E5;
+    border-color: #B1B1B1;
+}
+
+
+
+/*.sous_onglet {
+	font-family: 'Raleway SemiBold';
+	background: #3ec8ce;
+}*/
+
+
+/*suppression onglet info contenu etc ... */
+  /*#ilTab { 
+
+  display: none; 
+}*/
+
+/******** TITRE CATEGORIE ***************/
+
+a#il_mhead_t_focus {
+	font-family: 'Raleway Regular';
+	text-transform: uppercase;
+	background: #3ec8ce;
+	color: white;
+
+}
+
+hr {
+ border: 1px solid #3ec8ce;
+}
+
+/******** fil d'ariane ***************/
+
+#mainscrolldiv > ol > li > a {
+	font-family: 'Raleway SemiBold';
+    color: #3ec8ce;
+}
+
+.breadcrumb > li + li:before {
+    content: ">>";
+    padding: 0px 5px;
+    color: #3ec8ce;
+}
+
+
+
+
